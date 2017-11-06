@@ -1,0 +1,455 @@
+
+#index {
+    overflow: hidden;
+    height: 1000px;
+    background: red;
+}
+
+#active {
+    overflow: hidden;
+    background: #f1f2f3;
+}
+.active-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+.banner {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.active-details,
+.active-nav {
+    overflow: hidden;
+}
+.active-nav {
+    margin-bottom: 20px;
+}
+.active-nav li {
+    float: left;
+    margin-right: 50px;
+}
+.active-nav a {
+    display: block;
+    font-size: 16px;
+}
+.active-nav  .router-link-active {
+    color: #0096e6;
+}
+.active-footer {
+    background: #fff;
+    margin-top: 60px;
+}
+.active-footer-box {
+    overflow: hidden;
+}
+.web {
+    float: left;
+    overflow: hidden;
+    width: 54%;
+}
+.web p {
+    float: left;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 20px;
+}
+.web .author {  
+    padding-bottom: 10px;
+}
+.author a {
+    color: #0096e6;
+}
+.follow {
+    float: right;
+    padding-top: 20px;
+}
+.follow ul {
+    float: left;
+    margin-right: 40px;
+}
+.follow li {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    line-height: 25px;
+}
+.follow .QR-code {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #999;
+    margin-right: 10px;
+}
+.follow .QR-code img {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+}
+
+.active-details-index {
+    background: #fff;
+    padding: 20px;
+}
+.search {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.search input,
+.search button {
+    float: left;
+    border-radius: 4px;
+}
+.search input {
+    width: 340px;
+    height: 34px;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    padding-left: 10px;
+    margin-right: 15px;
+}
+.search button {
+    height: 36px;
+    color: #fff;
+    background-color: #0096e6;
+    border: none;
+    outline: none;
+    padding: 0 22px;
+}
+.active-select {
+    height: 60px;
+    background-color: #f8f8f8;
+    margin-bottom: 20px;
+    position: relative;
+}
+.active-select h4,
+.classify {
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+}
+.active-select h4 {
+    float: left;
+    font-weight: 400;
+    left: 20px;
+    padding: 0 20px 0 30px;
+    border-right: 1px solid #eeeded;
+}
+.classify { 
+    left: 15%;
+}
+.classify li {
+    float: left;
+    padding: 0 20px;
+}
+/**活动详情报名**/
+.details {
+    overflow: hidden;
+    border-top: 1px solid #f6f6f6;
+}
+.details-left {
+    float: left;
+    width: 692px;
+    border-right: 1px solid #f6f6f6;
+}
+.details-left-module {  
+    overflow: hidden;
+    margin-top: 24px;
+    margin-right: 24px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #f6f6f6;
+    position: relative;
+}
+.details-image-show,
+.details-images-text {
+    float: left;
+}
+.details-image-show {
+    margin-right: 24px;
+}
+.details-image-show img {
+    display: inline-block;
+}
+.details-images-text h3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #2d2d2d;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.details-data {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.details-data li {
+    text-align: left;
+    margin-top: 4px;
+}
+.details-btn {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    padding: 0 18px;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 28px;
+    right: 0;
+}
+.apply {
+    background-color: #0096e6;
+}
+.already {
+    background-color: #dfdfdf;
+}
+.page {
+    width: 400px;
+    height: 40px;
+    margin: 20px auto;
+}
+.page a,
+.page span {
+    float: left;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding: 7px 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+.page .active-page {
+    color: #fff;
+    background-color: #0096e6;
+    border: 1px solid #0096e6;
+}
+/*右侧**/
+.details-right {
+    overflow: hidden;
+    float: right;
+    width: 266px; 
+    border-right: 1px solid #f6f6f6;
+}
+.initiating-activities{
+    float: right;
+    width: 246px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background-color: #0096e6;
+    margin-top: 24px;
+}
+.initiating {
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin-left: 51px;
+    margin-top: 15px;
+    background: url(/dist/images/index-ico.png?5aae4ad34f0da0fd0bddeba80b07a193) no-repeat -173px -247px;
+}
+.initiating-activities span {
+    float: left;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.transparent-box {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+}
+.transparent-form {
+    width: 24%;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -12%;
+    border-radius: 4px;
+    padding: 30px;
+}
+.form-title {
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.form-title a {
+    float: right;
+    font-size: 20px;
+}
+.transparent-form h2 {
+    float: left;
+    font-size: 16px;
+    text-align: left;
+}
+.transparent-form label {
+    display: block;
+    width: 320px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.transparent-form input {
+    width: 240px;
+    height: 30px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-left: 10px;
+    box-shadow: 1px 1px 1px #999 inset;
+    outline: none;
+    padding-left: 10px;
+}
+.transparent-form .form-btn {
+    width: 80%;
+    height: 40px;
+    color: #fff;
+    background-color: #0096e6;
+    margin: 40px auto 0;
+}
+
+.active-details-signup {
+    height: 600px;
+}
+
+#information {
+    overflow: hidden;
+    height: 1000px;
+    background: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *  页面默认样式
+ */
+html {height: 100%;
+}
+body {
+	height: 100%;
+	color: #000;
+	font-family: "Helvetica Neue","Helvetica","STHeiTi","sans-serif","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1";
+	font-size: 14px;
+	text-align: center;
+}
+h1 {font-family: 宋体,sans-serif;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, tr {
+	margin: 0 auto;
+	padding: 0;
+}
+input, select {
+	font-size: 16px;
+	vertical-align: middle;
+}
+textarea, input {
+	word-wrap: break-word;
+	word-break: break-all;
+	padding:0px;
+}
+li {list-style-type: none;
+}
+img {border: 0 none;
+}
+a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*
+ *  页面头部样式
+ */
+.header {
+	overflow: hidden;
+	background-color: #fff;
+	border-bottom: 1px #8e8e8e solid;
+}
+.header-bd {
+	width: 1000px;
+	height: 59px;
+	margin: 0 auto;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	display: block;
+	margin-top: 6px;
+}
+.logo img {
+	display: block;
+	height: 46px;
+}
+.nav,
+.nav li {
+	float: left;
+}
+.nav {
+	width: 60%;
+	margin-left: 15px;
+}
+.nav li {
+	padding: 0 10px;
+}
+.nav a {
+	display: block;
+	font-size: 18px;
+	height: 59px;
+	line-height: 60px;
+	padding: 0 10px;
+}
+.nav .default-btn {
+	border-bottom: 4px solid transparent;
+}
+.nav .router-link-active {
+	color: #0096e6;
+	border-bottom: 4px solid #0096e6;
+}
