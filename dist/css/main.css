@@ -248,7 +248,7 @@
     width: 32px;
     margin-left: 51px;
     margin-top: 15px;
-    background: url(/dist/images/index-ico.png?5aae4ad34f0da0fd0bddeba80b07a193) no-repeat -173px -247px;
+    background: url(/dist/images/index-ico.png) no-repeat -173px -247px;
 }
 .initiating-activities span {
     float: left;
