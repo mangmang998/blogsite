@@ -248,12 +248,12 @@
     width: 32px;
     margin-left: 51px;
     margin-top: 15px;
-    background: url(/dist/images/index-ico.png) no-repeat -173px -247px;
+    background: url(images/index-ico.png) no-repeat -173px -247px;
 }
 .initiating-activities span {
     float: left;
     font-size: 24px;
-    margin-left: 10px;
+    text-align: center;
 }
 .transparent-box {
     display: none;
