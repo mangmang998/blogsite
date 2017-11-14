@@ -1,0 +1,441 @@
+body {
+	color: #5c5c5c;
+	background: #F3F3F3;
+	font-family: "Helvetica Neue","Helvetica","STHeiTi","sans-serif","Microsoft YaHei","\5fae\8f6f\96c5\9ed1";
+	font-size: 14px;
+	text-align: center;
+}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, tr {
+	margin: 0 auto;
+	padding: 0;
+}
+input, select {
+	font-size: 16px;
+	vertical-align: middle;
+}
+textarea, input {
+	word-wrap: break-word;
+	word-break: break-all;
+	padding:0px;
+}
+li {list-style-type: none;}
+img {border: 0 none;}
+a {
+	color: #5c5c5c;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+}
+/*===================*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?dnyavr');
+    src:    url('../fonts/icomoon.eot?dnyavr#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?dnyavr') format('truetype'),
+        url('../fonts/icomoon.woff?dnyavr') format('woff'),
+        url('../fonts/icomoon.svg?dnyavr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\e900";
+}
+.icon-bin:before {
+    content: "\e903";
+}
+.icon-heart:before {
+    content: "\e901";
+}
+.icon-next:before {
+    content: "\e902";
+}
+/*===========*/
+.wrap {
+	overflow: hidden;
+	max-width: 640px;
+	min-width: 320px;
+	background-color: #fff;
+	position: relative;
+}
+.homepage {	
+	width: 100%;
+	background-color: #fbfbfa;
+}
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 48px;
+	background-color: #fdfdfd;
+	border-bottom: 1px solid #ccc;
+}
+
+.font-color-green {
+	color: #5cbc7d;
+}
+.font-color-red {
+	color: #ff4660;
+}
+@media screen and (max-height: 580px) {
+	.ul-title {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin-left: 8px;
+	}
+	.ul-title li {
+		width: 64px;
+		float: left;
+	}
+	.ul-title .li-underline {
+		width:64px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	/*@keyframes mymove
+		{
+			from {left:0px;}
+			to {left:64px;}
+		}*/
+	.ul-title .li-underline span {
+		display: block;
+		width: 34px;
+		height: 2px;
+		margin: 0 auto;
+	}
+	.content-box .content-box-li {
+		width: 320px;
+	}
+	.content-box {
+		width: 3000px;
+		position: relative;
+		left: -960px;
+	}
+}
+@media screen and (min-height: 650px) {
+	.ul-title {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin-left: 10px;
+	}
+	.ul-title li {
+		width: 74px;
+		float: left;
+	}
+	.ul-title .li-underline {
+		width:74px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		
+	}
+
+
+	.ul-title .li-underline span {
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin: 0 auto;
+		margin-top: 46px;
+	}
+	.content-box .content-box-li {
+		width: 375px;
+	}
+	.content-box {
+		width: 3000px;
+		position: relative;
+		left: -1125px;
+	}
+}
+@media screen and (min-height: 720px) {
+	.ul-title {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin-left: 12px;
+	}
+	.ul-title li {
+		width: 80px;
+		float: left;
+	}
+	.ul-title .li-underline {
+		width:80px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		
+	}
+	/*@keyframes mymove 
+		{
+			from {left:0px;}
+			to {left:80px;}
+		}*/
+	.ul-title .li-underline span {
+		display: block;
+		width: 40px;
+		height: 2px;
+		margin: 0 auto;
+	}
+	.content-box .content-box-li {
+		width: 414px;
+	}
+	.content-box {
+		width: 3000px;
+		position: relative;
+		left: -1242px;
+	}
+}
+.ul-title .li-underline-green {
+	background-color: #5cbc7d;
+}
+.ul-title .li-underline-red {
+	background-color: #ff4660;
+}
+.ul-title li a {
+	display: block;
+	height: 48px;
+	line-height: 48px;
+}
+/*
+*列表内容
+*/
+.content {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: 48px;
+}
+.content-box {
+	width: 3000px;
+	
+}
+.content-box .content-box-li {
+	float: left;
+}
+/*module1*/
+.list {display: block;}
+.list ul li {
+	display: inline-block;
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	border-bottom: 1px solid #f5f5f5;
+}
+.last-list-information {
+	margin-bottom: 60px;
+}
+.list-information img {
+	float: left;
+	width: 42px;
+	height: 42px;
+	margin: 12px;
+	border-radius: 50px;
+}
+.list-information a {
+	float: left;
+	width: 60%;
+	white-space:nowrap;
+	text-align: left;
+	overflow: hidden;
+	font-size: 16px;
+}
+.list-information span {
+	font-size: 14px;
+	color: #ccc;
+	padding-left: 4px;
+	letter-spacing: 1px;
+}
+.list .list-title {height: 26px;}
+.list .list-title span {
+	display: block;
+	text-align: left;
+	font-size: 12px;
+	color: #ccc;
+	line-height: 26px;
+	margin-left: 15px;
+}
+/*module2*/
+.list2 ul li {
+	border-bottom: 1px solid #f5f5f5;
+	text-align: left;
+	padding: 15px;
+	position: relative;
+}
+.list2 img {
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+.list2-title {
+	
+	width: 80%;
+	font-size: 18px;
+	color: #000;
+	white-space: nowrap;
+	word-wrap:break-word;
+	line-height: 30px;
+	letter-spacing: 1.2px;
+}
+.list2-collection {
+	font-size: 12px;
+	color: #ccc;
+	width: 80%;
+	white-space: nowrap;
+	word-wrap:break-word;
+	letter-spacing: 1.8px;
+}
+.list2 .classify {
+	height: 26px;
+	padding: 4px 15px;
+	line-height: 26px;
+	color: #CCC;
+}
+.list2-more,
+.classify .off-line {
+	float: right;
+	color: #ff4660;
+	padding-right: 35px;
+}
+.random {
+	font-size: 16px;
+	padding: 10px 15px;
+}
+.random .icon-next {
+	color: #ff4660;
+}
+.random span {
+	margin-left: 8px;
+	letter-spacing: 1px;
+}
+/*module3*/
+.personal-information {
+	width: 100%;
+	padding: 10px;
+	border-bottom: 1px solid #f5f5f5; 
+}
+.personal-information img {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-bottom: 8px;
+}
+.personal-name {
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+}
+.personal-directory {
+	overflow: hidden;
+}
+.personal-directory li {
+	font-size: 16px;
+	padding: 30px 15px;
+}
+.personal-directory li i {
+	font-size: 20px;
+}
+.personal-directory .right-icon {
+	float: right;
+}
+.personal-directory .left-icon {
+	float: left;
+	margin-right: 8px;
+}
+/*
+*播放条
+*/
+.footer {
+	width: 100%;
+	height: 60px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	background-color: #fff;
+	box-shadow: 0 -1px 10px 2px rgba(0, 0, 0, .1);
+}
+.footer img {
+	margin:10px;
+	margin-right: 6px;
+}
+.footer .song {
+	font-size: 14px;
+	color: #000;
+	width: 48%;
+	padding-top: 14px;
+	text-align: left;
+}
+.song span {
+	display: block;
+	height: 18px;
+	overflow: hidden;
+	line-height: 18px;
+}
+.footer a .footer-song-name {
+	font-size: 16px;
+	color: #000;
+	letter-spacing: 0px;
+}
+.footer a .footer-state {
+	font-size: 12px;
+	margin-top: 2px;
+}
+.footer .button {
+	width: 14%;
+	font-size: 20px;
+	color: #777;
+	padding-top: 20px;
+}
+.footer .icon-heart {
+	padding-left: 6px;
+}
+.footer .icon-heart-click {
+	color: #ff4660;
+}
+.footer .icon-next {
+	font-size: 26px;
+	padding: 18px 0 0 34px;
+}
+@media screen and (max-height: 580px) {
+	.footer .icon-next {
+		font-size: 26px;
+		padding: 18px 0 0 10px;
+	}
+}
+@media screen and (min-height: 650px) {
+	.footer .icon-next {
+		font-size: 26px;
+		padding: 18px 0 0 14px;
+	}
+}
+@media screen and (min-height: 720px) {
+	.footer .icon-heart {
+		padding-left: 28px;
+	
+	}
+	.footer .icon-next {
+		font-size: 26px;
+		padding: 18px 0 0 10px;
+}

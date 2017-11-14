@@ -1,0 +1,344 @@
+html {height: 100%;}
+body {
+	height: 100%;
+	color: #000;
+	font-family: "Helvetica Neue","Helvetica","STHeiTi","sans-serif","Microsoft YaHei","\5fae\8f6f\96c5\9ed1";
+	font-size: 14px;
+	text-align: center;
+}
+h1 {font-family: 宋体,sans-serif;}
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, img, div, tr {
+	margin: 0 auto;
+	padding: 0;
+}
+input, select {
+	font-size: 16px;
+	vertical-align: middle;
+}
+textarea, input {
+	word-wrap: break-word;
+	word-break: break-all;
+	padding:0px;
+}
+li {list-style-type: none;}
+img {border: 0 none;}
+a {
+	color: #000;
+	font-size: 14px;
+	text-decoration: none;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?dnyavr');
+    src:    url('../fonts/icomoon.eot?dnyavr#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?dnyavr') format('truetype'),
+        url('../fonts/icomoon.woff?dnyavr') format('woff'),
+        url('../fonts/icomoon.svg?dnyavr#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+    content: "\e900";
+}
+.icon-bin:before {
+    content: "\e903";
+}
+.icon-heart:before {
+    content: "\e901";
+}
+.icon-next:before {
+    content: "\e902";
+}
+/*============*/
+.vice-page {
+	overflow: hidden;
+	max-width: 640px;
+	min-width: 320px;
+	height: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	bottom: 0;
+	background: transparent;
+	display: none;
+}
+.vice-page .head-transparent {
+	width: 100%;
+	height: 48px;
+	float: left;
+	background: #fff;
+	opacity: .8;
+}
+.track-content {
+	width: 100%;
+	margin-top: 48px;
+	background: #fff;
+}
+.track-title {
+	float: left;
+	width: 100%;
+
+}
+.track-title h1 {
+	display: block;
+	color: #5cbc7d;
+}
+.track-title h1 span {letter-spacing: 2px;}
+.track-image {
+	float: left;
+	width: 100%;
+}
+/*
+*	播放进度条
+*/
+.schedule {
+	width: 180px;
+	height: 180px;
+	background-color: #e9f4eb;
+	border-radius: 120px;
+	position: relative;
+	}
+.track-image img {
+	border-radius: 120px;
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	z-index: 0;
+}
+.left,.right{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.pie_left, .pie_right{
+	width:220px;
+	height:220px;
+	position: absolute;
+	border-radius: 50%;
+	top: 0px;left: 0px;
+	background-color: #d6f1df;
+}
+.pie_right,.right {clip:rect(0,auto,auto,100px);}
+.pie_left , .left{clip:rect(0,100px,auto,0);}
+.track-details {
+	float: left;
+	width: 100%;	
+}
+.track-name {font-size: 20px;}
+.track-singer {
+	width: 40%;
+	font-size: 16px;
+	text-align: center;
+}
+.track-singer {
+	font-size: 14px;
+	color: #ddd;
+}
+.track-icon {
+	width: 60%;
+	height: 20px;
+}
+.track-icon li {
+	float: left;
+	width: 33%;
+	font-size: 18px;
+	color: #ddd;
+	text-align: center;
+}
+.track-footer {
+	background-color: #fff;
+	width: 100%;
+}
+.track-footer ul {
+	width: 80%;
+	margin: 0 auto;
+}
+.track-footer ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	font-size: 26px;
+	color: #777;
+	padding-top: 8px;
+}
+.track-footer ul .icon-next {
+	font-size: 32px;
+	padding-top: 4px;
+}
+.track-footer {height: 60%;}
+@media screen and (max-height: 580px) {
+	.head-transparent {height: 40px;background: transparent;}
+	.track-content {height: 74%;}
+	.track-title {
+		height: 20px;
+		margin: 18px auto 6px auto;
+	}
+	.track-title h1 {font-size: 24px;}
+	.track-image {
+		height: 46%;
+		margin: 26px auto;
+	}
+	.schedule {
+		width: 180px;
+		height: 180px;
+	}
+	.track-image img {
+		width: 170px;
+		height: 170px;
+	}
+	.track-image img {
+		top: 5px;
+		left: 5px;
+	}
+	.left,.right{
+		width:180px;
+		height:180px;
+	}
+	.pie_left, .pie_right{
+		width:180px;
+		height:180px;
+	}	    
+	.track-name,
+	.track-singer {line-height: 26px;}
+	.track-icon {margin: 36px auto;}
+}
+@media screen and (max-height: 490px) {
+	.track-image {
+		height: 50%;
+		margin: 20px auto;
+	}
+	.track-name {font-size: 18px;}
+	.track-name,
+	.track-singer {line-height: 24px;}
+	.track-icon {margin: 20px auto;}
+}
+@media screen and (min-height: 650px) {
+	.head-transparent {height: 50px;background: transparent;}
+	.track-content {height: 75%;}
+	.track-title {
+		height: 40px;
+		margin: 30px auto 10px auto;
+	}
+	.track-image {
+		height: 48%;
+		margin: 20px auto;
+	}
+	/*
+	*	播放进度条
+	*/
+	.schedule {
+		width: 240px;
+		height: 240px;
+	}
+	.track-image img {
+		width: 226px;
+		height: 226px;
+	}
+	.left,.right{
+		width:240px;
+		height:240px;
+	}
+	.pie_left, .pie_right{
+		width:240px;
+		height:240px;
+	}
+	.track-name,
+	.track-singer {line-height: 30px;}
+	.track-icon {margin: 40px auto;}
+}
+/*
+*
+*more
+*
+*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts2/icomoon.eot?ta5g8o');
+    src:    url('../fonts2/icomoon.eot?ta5g8o#iefix') format('embedded-opentype'),
+        url('../fonts2/icomoon.ttf?ta5g8o') format('truetype'),
+        url('../fonts2/icomoon.woff?ta5g8o') format('woff'),
+        url('../fonts2/icomoon.svg?ta5g8o#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-music:before {
+    content: "\e911";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-download3:before {
+    content: "\e9c7";
+}
+.icon-share2:before {
+    content: "\ea82";
+}
+
+
+.more-content {
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: .6;
+	position: relative;
+}
+.more-div {
+	width: 100%;
+	position: absolute;
+	bottom: 190px;
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.more-click {
+	float: left;
+	width: 25%;
+	margin: 10px auto;
+}
+.more-click i {
+	float: left;
+	font-size: 22px;
+	color: #777;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.more-click span {
+	float: left;
+	font-size: 12px;
+	color: #777;
+	width: 100%;
+}
